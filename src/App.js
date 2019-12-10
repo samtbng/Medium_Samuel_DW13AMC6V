@@ -1,10 +1,9 @@
 import React from 'react';
 import Register from './Register';
-
 function App(){
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <header>
         <Register/>
       </header>
     </div>
