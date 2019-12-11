@@ -9,8 +9,8 @@ import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import SearchIcon from '@material-ui/icons/Search';
 import Menu from '@material-ui/core/Menu';
 import InputBase from '@material-ui/core/InputBase';
-import Register from './Register';
-import Profile from './Profile';
+import Register from '../components/Register';
+import Profile from '../components/Profile';
 import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({

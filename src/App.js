@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './Header';
-import Navigation from './Navigation';
-import Home from './Home';
-import Home2 from './Home2';
+import Header from './components/Header';
+import Navigation from './components/Navigation';
+import Home from './contents/Home';
+import Home2 from './contents/Home2';
 import {Container, Divider} from '@material-ui/core';
 
 function App(){

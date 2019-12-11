@@ -18,7 +18,7 @@ export default function Home() {
   const classes = useStyles();
   return (
     <div className={classes.root} style={{position:'sticky', top:"0", zIndex:"1000"}}>
-      <AppBar position="static" elevation="100" style={{background:"white", alignItems:"center"}}>
+      <AppBar position="static" elevation="0" style={{background:"white", alignItems:"center"}}>
         <Toolbar>
           <Button>Home</Button>
           <Link to="/CategoryPage"><Button>One Zero</Button></Link>

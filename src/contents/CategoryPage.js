@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header';
+import Header from '../components/Header';
 import {Container, Grid, Typography, Button, Paper} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
@@ -60,7 +60,8 @@ export default function CategoryPage() {
                 alignItems="center"
                 maxWidth="md"
                 minWidth="md"
-                spacing={6}>
+                spacing={6}
+                >
                     <Grid container style={{margin:"30px 0 30px 0"}}>
                         <Grid item xs={2}>
                             <img src="./oneZero.png" alt="One Zero Logo" width="220px"/>
@@ -147,9 +148,9 @@ export default function CategoryPage() {
                             </Grid>
                         </Container>
                     </Grid>
-                    <Grid Container>
+                    <Grid container>
                         <Container style={{marginBottom:"20px"}}>
-                            <Grid container spacing={0}>
+                            <Grid container spacing={0} style={{background:"red"}}>
                                 <Grid item xs={7}>
                                     <Card className={classes.card}>
                                         <CardActionArea>
@@ -180,24 +181,29 @@ export default function CategoryPage() {
                                 </Grid>
                         </Container>
                     </Grid>
-                    <Grid Container>
+                    <Grid container>
                         <Container style={{marginBottom:"20px"}}>
-                            <Paper height="300" classesName={classes.paper}>
-                                <Typography className={classes.title}>
-                                <b>
-                                    Architects Are Playing With the Future of Design in Video Games
-                                </b>
-                                </Typography>
-                                <Typography style={{marginBottom:"10px"}} variant="body2" component="p" color="gray">
-                                Game worlds can be blueprints for the real world, liberating spaces where rules can be reinvented and the invisible made visible
-                                </Typography>
-                                <Typography variant="body2" component="p" color="black">
-                                Thomas McMullan<br/>
-                                9 December - 6 min read
-                                </Typography>
-                            </Paper>
+                            <Grid container spacing={0}>
+                                     <Grid className={classes.paper} item xs={12} container style={{padding:"0 100px 0 100px", background:"#daf832", color:"black", height:"200px", textAlign:"left"}}>
+                                        <Typography className={classes.title}>
+                                        <b>
+                                            "We have a few new things to share."
+                                        </b>
+                                        </Typography>
+                                        <Typography style={{marginBottom:"10px"}} variant="body2" component="p" color="gray">
+                                        — Damon Beres
+                                        </Typography>
+                                        <Typography variant="body2" component="p" color="black">
+                                        Welcome to a Refreshed OneZero 
+                                        </Typography>
+                                        <Typography>
+                                        Dec 3 - 2 min read
+                                        </Typography>
+                                    </Grid>
+                                </Grid>
                         </Container>
                     </Grid>
+                    
                 </Grid>
             </div>
         </Container>

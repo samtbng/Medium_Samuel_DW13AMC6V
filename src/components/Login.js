@@ -18,9 +18,9 @@ export default class Login extends Component{
         return(
       <div style={{alignItems:"center"}}>
       <Grid container justify="center" spacing={0}>
-        <Grid item xs>
+        <Grid  item xs={12} sm={3}>
         </Grid>
-        <Grid item xs>
+        <Grid item xs={12} sm={6}>
           <div className="App-header">
             <DialogTitle id="customized-dialog-title">Sign in with email</DialogTitle>
               <DialogContent>
@@ -63,7 +63,7 @@ export default class Login extends Component{
             </DialogContentText>
           </div>
         </Grid>
-        <Grid item xs>
+        <Grid item xs={12} sm={3}>
         </Grid>
       </Grid>
     </div>

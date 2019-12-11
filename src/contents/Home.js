@@ -8,7 +8,7 @@ import Container from '@material-ui/core/Container';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import ListArticle from './ListArticle';
+import ListArticle from '../components/ListArticle';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -70,23 +70,25 @@ const articles = [
     gambar: 'https://miro.medium.com/max/6400/1*ABKMOAKgjnC2CnuF8PDtsQ.jpeg'
   }
 ]
+
 export default function Home() {
   const classes = useStyles();
+
   return (
     <Container className={classes.root} style={{marginBottom:"30px", marginTop:"30px"}}>
     <div >
       <Grid maxwidth="md" container justify="center" spacing={1} style={{marginBottom:"5px"}}>
         <Grid item xs>
-          <Card  elevation="0" className={classes.card}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                alt="Joy Of Being an Uthethered Woman"
-                height="140"
-                image="./favLeft.jpeg"
-                title="Joy Of Being an Uthethered Woman"
-              />
-            </CardActionArea>
+          <Card elevation="0" className={classes.card}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  alt="Joy Of Being an Uthethered Woman"
+                  height="140"
+                  image="./favLeft.jpeg"
+                  title="Joy Of Being an Uthethered Woman"
+                />
+              </CardActionArea>
             <Paper>
               <Typography gutterBottom variant="h5" component="h2">
               The Joy of Being an Untethered Woman

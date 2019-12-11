@@ -4,13 +4,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-import CategoryPage from './CategoryPage';
+import CategoryPage from './contents/CategoryPage';
+
 
 ReactDOM.render(
     <Router>
         <div>
             <Route exact path="/" component={App}/>
             <Route exact path="/CategoryPage" component={CategoryPage}/>
+            
         </div>
     </Router>, document.getElementById('root'));
 

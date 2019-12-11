@@ -5,10 +5,10 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Divider from '@material-ui/core/Divider';
-import ListPopular from './ListPopular';
-import ListPopular2 from './ListPopular2';
+import ListPopular from '../components/ListPopular';
+import ListPopular2 from '../components/ListPopular2';
 
-const articles = [
+export const articles = [
     {
       id: 1,
       rank:'01',
