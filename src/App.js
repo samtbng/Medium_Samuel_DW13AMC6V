@@ -1,10 +1,21 @@
 import React from 'react';
-import Register from './Register';
+import Header from './Header';
+import Navigation from './Navigation';
+import Home from './Home';
+import Home2 from './Home2';
+import {Container, Divider} from '@material-ui/core';
+
 function App(){
   return (
     <div>
       <header>
-        <Register/>
+        <Container>
+        <Header/>
+        <Navigation/>
+        <Home/>
+        <Divider style={{margin:"10px"}} />
+        <Home2/>
+        </Container>
       </header>
     </div>
   );

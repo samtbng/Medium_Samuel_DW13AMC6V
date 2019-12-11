@@ -4,7 +4,6 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
@@ -17,8 +16,10 @@ const useStyles = makeStyles(theme=> ({
     minHeight:'550px',
     borderRadius:'4px',
     height:'100%',
-    flexDirection:'row',
+    flexDirection:'column',
     display:'block',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   middleBox:{
     width:'360px',
@@ -67,8 +68,8 @@ export default function Register() {
       <Button variant="outlined" color="primary" onClick={handleClickOpen}>
         Register
       </Button>
-      <Dialog maxWidth="md" maxHeight="md" open={open} onClose={handleClose} aria-labelledby="customized-dialog-title">
-        <div>
+      <Dialog className={classes.dialog} maxWidth="md" maxHeight="md" open={open} onClose={handleClose} aria-labelledby="customized-dialog-title">
+        <div style={{alignItems:"center"}} >
           <Grid maxwidth="md" maxHeight="md" container justify="center" spacing={0}>
           <Grid item xs> 
           <img src="./left.png" alt=""></img>
@@ -111,13 +112,11 @@ export default function Register() {
                       />
                     </div>
                   </DialogContent>
-                  <DialogActions>
-                    <div>
-                      <Button style={{backgroundColor:"black", color:"white"}} onClick={handleClose} >
+                    <div style={{flexDirection: "row", justifyContent: "center"}}>
+                      <Button style={{backgroundColor:"black", color:"white" }} onClick={handleClose} >
                         Registration
                       </Button>
-                  </div>
-                  </DialogActions>
+                    </div>
                   <DialogContentText>
                     <h4 className={classes.middleUpperText}>
                     Already have an account?

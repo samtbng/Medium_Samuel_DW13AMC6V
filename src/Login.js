@@ -16,7 +16,7 @@ export default class Login extends Component{
         this.props.openDialogRegister(true);
    }
         return(
-      <div>
+      <div style={{alignItems:"center"}}>
       <Grid container justify="center" spacing={0}>
         <Grid item xs>
         </Grid>
@@ -29,7 +29,6 @@ export default class Login extends Component{
                     Enter the email address associated with your account, 
                     and we’ll send a magic link to your inbox.
                   </DialogContentText>
-                  <form>
                     <TextField
                       autoFocus
                       margin="dense"
@@ -46,10 +45,11 @@ export default class Login extends Component{
                       type="password"
                       fullWidth
                     />
-                    <Button style={{background:"black", color:"white"}}>
-                      Continue
-                    </Button>
-                  </form>
+                    <div style={{flexDirection: "row", justifyContent: "center"}}>
+                      <Button style={{background:"black", color:"white"}}>
+                        Continue
+                      </Button>
+                    </div>
                 </div>
               </DialogContent>
               <DialogContentText>
