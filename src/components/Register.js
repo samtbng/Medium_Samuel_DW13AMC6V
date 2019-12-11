@@ -71,10 +71,10 @@ export default function Register() {
       <Dialog className={classes.dialog} maxWidth="md" maxHeight="md" open={open} onClose={handleClose} aria-labelledby="customized-dialog-title">
         <div style={{alignItems:"center"}} >
           <Grid maxwidth="md" maxHeight="md" container justify="center" spacing={0}>
-          <Grid item xs> 
+          <Grid item xs={12} sm={3}> 
           <img src="./left.png" alt=""></img>
           </Grid>
-          <Grid item xs>
+          <Grid item xs={12} sm={6}>
            <div  className={classes.middleBox} >
              <div className={classes.headerBox}>
                 <DialogTitle id="customized-dialog-title"><p className={classes.headerText}>Join Medium.</p></DialogTitle>
@@ -134,7 +134,7 @@ export default function Register() {
                  </div>
                 </div>
               </Grid>
-              <Grid item xs>
+              <Grid item xs={12} sm={3}>
                 <img src="./right.png" alt=""></img>
               </Grid>
             </Grid>

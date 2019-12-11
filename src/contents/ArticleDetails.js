@@ -10,6 +10,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import BookmarkIcon from '@material-ui/icons/BookmarkBorder';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import Follow from '../components/Follow';
 
 
 
@@ -86,7 +87,7 @@ export default function CategoryPage() {
                     <Typography variant="caption">Photo by Olu Eletu</Typography>
                 </div>
             </div>
-            <div style={{textAlign:"justify", flex:1, flexDirection:"column", display:"flex", padding:"0 150px 0 150px"}}>
+            <div style={{textAlign:"justify", flex:1, flexDirection:"column", display:"flex", padding:"0 250px 0 250px"}}>
                 <div style={{marginBottom:"20px"}}>
                     <Typography className={classes.header}>
                         The Greatest Sales Deck I’ve Ever Seen
@@ -102,7 +103,7 @@ export default function CategoryPage() {
                     <div style={{flex:1, flexDirection:"column", display:"flex"}}>
                         <div>
                             <Typography className={classes.profileName} variant="caption"style={{marginRight:"6px"}}>Andy Raskin</Typography>
-                            <Button className={classes.follow} variant="outlined" color="green">Follow</Button>
+                            <Button className={classes.follow} style={{border:"1px green solid", color:"green"}}>Follow</Button>
                         </div>
                         <div>
                             <Typography className={classes.profileName} color="textSecondary">
@@ -124,16 +125,17 @@ export default function CategoryPage() {
                         <IconButton
                             color="inherit"
                         >
-                            <BookmarkIcon/>
+                            <LinkedInIcon/>
                         </IconButton>
                         <IconButton
                             color="inherit"
                         >
-                            <LinkedInIcon/>
+                            <BookmarkIcon/>
                         </IconButton>
+                        
                     </div>
                 </div>
-                <div className={classes.article}>
+                <div className={classes.article} style={{marginBottom:"30px"}}>
                     <Typography className={classes.article}>
                         A few months ago, my friend Tim took a new sales job at a Series C tech company that had raised over $60 million from A-list investors. 
                         He’s one of the best salespeople I know, but soon after starting, he emailed me to say he was struggling.
@@ -163,6 +165,9 @@ export default function CategoryPage() {
                         “This,” I said, “is the greatest sales deck I have ever seen.”
                     </Typography>
                 </div>
+                
+                    <Follow/>
+                
             </div>
         </Container>
     );

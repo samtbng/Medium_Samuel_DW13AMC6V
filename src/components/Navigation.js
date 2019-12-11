@@ -1,38 +1,82 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Button from '@material-ui/core/Button';
+import React, { Component } from 'react';
+import ScrollMenu from 'react-horizontal-scrolling-menu';
 import {Link} from 'react-router-dom';
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
-  },
-  title: {
-    flexGrow: 1,
-  },
-}));
-
-export default function Home() {
-  const classes = useStyles();
+import '../App.css';
+ 
+// list of items
+const list = [
+  { name: 'Home', url:"/"},
+  { name: 'One Zero', url:"/CategoryPage"},
+  { name: 'Elemental', url:"/"},
+  { name: 'Zora', url:"/"},
+  { name: 'Force', url:"/"},
+  { name: 'Human Parts', url:"/"},
+  { name: 'Marker', url:"/"},
+  { name: 'Zora', url:"/"},
+  { name: 'Heated', url:"/"},
+  { name: 'Modus', url:"/"},
+  { name: 'More', url:"/"},
+];
+ 
+// One item component
+// selected prop will be passed
+const MenuItem = ({text, selected}) => {
+  return <div
+    className={`menu-item ${selected ? 'active' : ''}`}
+    >{text}</div>;
+};
+ 
+// All items component
+// Important! add unique key
+export const Menu = (list, selected) =>
+  list.map(items => {
+    return <Link to={items.url}><MenuItem text={items.name} key={items.name} selected={selected} /></Link>;
+  });
+ 
+const Arrow = ({ text, className }) => {
   return (
-    <div className={classes.root} style={{position:'sticky', top:"0", zIndex:"1000"}}>
-      <AppBar position="static" elevation="0" style={{background:"white", alignItems:"center"}}>
-        <Toolbar>
-          <Button>Home</Button>
-          <Link to="/CategoryPage"><Button>One Zero</Button></Link>
-          <Button>Elemental</Button>
-          <Button>Zora</Button>
-          <Button>Force</Button>
-          <Button>Human Parts</Button>
-          <Button>Marker</Button>
-          <Button>Zora</Button>
-          <Button>Heated</Button>
-          <Button>Modus</Button>
-          <Button>More</Button>
-        </Toolbar>
-      </AppBar>
-    </div>
+    <div
+      className={className}
+    >{text}</div>
   );
+};
+const ArrowLeft = Arrow({ text: '<', className: 'arrow-prev' });
+const ArrowRight = Arrow({ text: '>', className: 'arrow-next' });
+ 
+const selected = '';
+ 
+class Navigation extends Component {
+  constructor(props) {
+    super(props);
+    // call it again if items count changes
+    this.menuItems = Menu(list, selected);
+  }
+ 
+  state = {
+    selected
+  };
+ 
+  onSelect = key => {
+    this.setState({ selected: key });
+  }
+ 
+ 
+  render() {
+    const { selected } = this.state;
+    // Create menu from items
+    const menu = this.menuItems;
+ 
+    return (
+      <div className="App">
+        <ScrollMenu
+          data={menu}
+          arrowLeft={ArrowLeft}
+          arrowRight={ArrowRight}
+          selected={selected}
+          onSelect={this.onSelect}
+        />
+      </div>
+    );
+  }
 }
+export default Navigation

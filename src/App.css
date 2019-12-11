@@ -31,9 +31,19 @@
   font-size: calc(10px + 2vmin);
   color: black;
 }
-
 .App-link {
   color: green;
+}
+.menu-item {
+  padding: 0 40px;
+  margin: 5px 10px;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+}
+.scroll-menu-arrow {
+  padding: 20px;
+  cursor: pointer;
 }
 
 @keyframes App-logo-spin {
