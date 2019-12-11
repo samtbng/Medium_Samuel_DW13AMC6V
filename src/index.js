@@ -5,14 +5,14 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import CategoryPage from './contents/CategoryPage';
-
+import ArticleDetails from './contents/ArticleDetails'
 
 ReactDOM.render(
     <Router>
         <div>
             <Route exact path="/" component={App}/>
             <Route exact path="/CategoryPage" component={CategoryPage}/>
-            
+            <Route exact path="/ArticleDetails" component={ArticleDetails}/>
         </div>
     </Router>, document.getElementById('root'));
 

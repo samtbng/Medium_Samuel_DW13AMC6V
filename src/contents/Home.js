@@ -9,6 +9,7 @@ import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import ListArticle from '../components/ListArticle';
+import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -80,6 +81,7 @@ export default function Home() {
       <Grid maxwidth="md" container justify="center" spacing={1} style={{marginBottom:"5px"}}>
         <Grid item xs>
           <Card elevation="0" className={classes.card}>
+            <Link to="/ArticleDetails">
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -89,6 +91,7 @@ export default function Home() {
                   title="Joy Of Being an Uthethered Woman"
                 />
               </CardActionArea>
+            </Link>
             <Paper>
               <Typography gutterBottom variant="h5" component="h2">
               The Joy of Being an Untethered Woman
