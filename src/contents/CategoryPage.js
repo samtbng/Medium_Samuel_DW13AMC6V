@@ -6,6 +6,8 @@ import Link from '@material-ui/core/Link';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardActionArea from '@material-ui/core/CardActionArea';
+import OneZero from '../components/OneZero'; 
+import {articles} from '../contents/Home2';
 
 const useStyles = makeStyles(theme=> ({
     root:{
@@ -203,7 +205,17 @@ export default function CategoryPage() {
                                 </Grid>
                         </Container>
                     </Grid>
-                    
+                    <Grid item xs={8} spacing={4}>
+                        <div style={{margin:"30px 0 30px 0"}} ><hr/></div>
+                    {articles.map(item=>
+                    <OneZero
+                    title={item.title}
+                    subTitle={item.subTitle}
+                    author={item.author}
+                    gambar={item.gambar}
+                    infoDate={item.infoDate}/>
+                    )}
+                    </Grid>
                 </Grid>
             </div>
         </Container>
