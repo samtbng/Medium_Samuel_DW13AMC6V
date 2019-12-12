@@ -5,6 +5,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import BookmarkIcon from '@material-ui/icons/BookmarkBorder';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
+import {Link} from 'react-router-dom';
 
 const listProfile = [
     {
@@ -137,9 +138,11 @@ return(
                 </div>
                 <Divider style={{margin:"20px 0 20px 0"}} />
                     <div style={{flex:1, flexDirection:"column", display:"flex",}}>
-                        <Button style={{height:"40px",color:"green",border:"1px green solid", fontSize:"10px", fontWeight:"200"}}>
-                            See Responses (234)
-                        </Button>
+                        <Link to="/Comment" style={{flex:1, flexDirection:"column", display:"flex",}}>
+                            <Button renderAs={Link} style={{height:"40px",color:"green",border:"1px green solid", fontSize:"10px", fontWeight:"200"}}>
+                                See Responses (234)
+                            </Button>
+                            </Link>
                     </div>
             </div>
     </Container>

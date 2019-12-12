@@ -4,7 +4,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
-import AccountCircle from '@material-ui/icons/AccountCircle';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import SearchIcon from '@material-ui/icons/Search';
 import Menu from '@material-ui/core/Menu';
@@ -12,6 +11,7 @@ import InputBase from '@material-ui/core/InputBase';
 import Register from '../components/Register';
 import Profile from '../components/Profile';
 import {Link} from 'react-router-dom';
+import Avatar from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -115,8 +115,8 @@ export default function Home() {
                 onClick={handleMenu}
                 color="inherit"
               >
-                <AccountCircle/>
-              </IconButton>
+                <Avatar className={classes.clap} alt="Avatar" src={"https://miro.medium.com/fit/c/256/256/1*5HuPOJPsdTfmCoYOYwtCpw.jpeg"}/>
+            </IconButton>
               <Menu
                 id="menu-appbar"
                 anchorEl={anchorEl}

@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import Grid from '@material-ui/core/Grid';
 import IconButton from '@material-ui/core/IconButton';
-import AccountCircle from '@material-ui/icons/AccountCircle';
 import Typography from '@material-ui/core/Typography';
 import MenuItem from '@material-ui/core/MenuItem';
 import Divider from '@material-ui/core/Divider';
+import Avatar from '@material-ui/core/Avatar'
 
 export default class Login extends Component{
 
@@ -21,8 +21,7 @@ export default class Login extends Component{
                     <Grid container>
                         <Grid item xs style={{paddingLeft:"10px"}}>
                             <IconButton>
-                                
-                            <AccountCircle fontSize="large/"></AccountCircle>
+                                <Avatar alt="Claps" src={"https://miro.medium.com/fit/c/256/256/1*5HuPOJPsdTfmCoYOYwtCpw.jpeg"}/>
                             </IconButton>
                         </Grid>
                         <Grid style={{paddingRight:"10px"}}>

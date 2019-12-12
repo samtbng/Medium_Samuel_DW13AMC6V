@@ -11,6 +11,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import BookmarkIcon from '@material-ui/icons/BookmarkBorder';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Follow from '../components/Follow';
+import Footer from '../components/Footer';
 
 
 
@@ -165,10 +166,9 @@ export default function CategoryPage() {
                         “This,” I said, “is the greatest sales deck I have ever seen.”
                     </Typography>
                 </div>
-                
                     <Follow/>
-                
             </div>
+            <Footer/>
         </Container>
     );
 }
