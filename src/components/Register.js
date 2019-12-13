@@ -12,17 +12,11 @@ import Login from '../components/Login';
 import '../App.css';
 const useStyles = makeStyles(theme=> ({
   dialog:{
-    width:'100%',
-    minHeight:'550px',
-    borderRadius:'4px',
-    height:'100%',
     flexDirection:'column',
-    display:'block',
     justifyContent: 'center',
     alignItems: 'center'
   },
   middleBox:{
-    width:'360px',
     padding:'10px 16px',
     textAlign:'center',
     alignItems:'center',
@@ -70,7 +64,7 @@ export default function Register() {
       </Button>
       <Dialog className={classes.dialog} maxWidth="md" maxHeight="md" open={open} onClose={handleClose} aria-labelledby="customized-dialog-title">
         <div style={{alignItems:"center"}} >
-          <Grid maxwidth="md" maxHeight="md" container justify="center" spacing={0}>
+          <Grid container justify="center" spacing={0}>
           <Grid item xs={12} sm={3}> 
           <img src="./left.png" alt=""></img>
           </Grid>

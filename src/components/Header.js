@@ -80,10 +80,10 @@ export default function Home() {
 
   return (
     <div className={classes.root}>
-      <AppBar  elevation="100" color="white" position="static">
+      <AppBar elevation="0" color="inherit" position="static">
         <Toolbar>
           <Typography variant="h4" className={classes.title}>
-            <Link to="/">Medium</Link>
+            <Link to="/" style={{textDecoration:"none"}}>Medium</Link>
           </Typography>
           <Register/>
           <div className={classes.search}>

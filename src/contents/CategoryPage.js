@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import {Container, Grid, Typography, Button, Paper} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
-import Link from '@material-ui/core/Link';
+import {Link} from 'react-router-dom';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -87,15 +87,17 @@ export default function CategoryPage() {
                             <Grid container spacing={0} >
                                 <Grid item xs={7}>
                                     <Card className={classes.card}>
-                                        <CardActionArea>
-                                            <CardMedia
-                                            component="img"
-                                            alt="Architects Are Playing With the Future of Design in Video Games"
-                                            image="./categ1.png"
-                                            height="300"
-                                            title="Architects Are Playing With the Future of Design in Video Games"
-                                            />
-                                        </CardActionArea>
+                                        <Link to="/ArticleDetails">
+                                            <CardActionArea>
+                                                <CardMedia
+                                                component="img"
+                                                alt="Architects Are Playing With the Future of Design in Video Games"
+                                                image="./categ1.png"
+                                                height="300"
+                                                title="Architects Are Playing With the Future of Design in Video Games"
+                                                />
+                                            </CardActionArea>
+                                        </Link>
                                     </Card>
                                 </Grid>
                                 <Grid className={classes.paper} item xs={5} container style={{background:"#6A0BFF", color:"white",textAlign:"center"}}>

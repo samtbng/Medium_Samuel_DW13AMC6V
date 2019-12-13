@@ -6,7 +6,7 @@ import ModeCommentIcon from '@material-ui/icons/ModeComment';
 import BookmarkIcon from '@material-ui/icons/BookmarkBorder';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-const comment = [
+const komentar = [
     {
         id:1,
         avatar:"https://miro.medium.com/fit/c/256/256/0*PAA0hv8HFxvrDMlc.jpeg",
@@ -63,7 +63,7 @@ const useStyles = makeStyles(theme => ({
         lineHeight:"14px",
         fontWeight:"bold"
     },
-    header:{
+    head:{
         fontSize:"14px",
         lineHeight:"18px",
         marginBottom:"10px",
@@ -93,7 +93,7 @@ export default function Comment(){
         <Container>
             <Header/>
             <div style={{background:"white", padding:"80px 300px 80px 300px",flex:1, flexDirection:"column", display:"flex"}}>
-                <Typography className={classes.header}>
+                <Typography className={classes.head}>
                         Showing Responses for:
                 </Typography>
                 <Paper style={{border:"1px black solid", flex:1, flexDirection:"column", display:"flex", padding:"20px"}}>
@@ -103,7 +103,7 @@ export default function Comment(){
                                 The Greatest Sales Deck I’ve Ever Seen
                             </Typography>
                         </div>
-                        <div style={{justifyContent:"flex-end", flex:1, flexDirection:"row", display:"flex",background:"white"}}>
+                        <div style={{justifyContent:"flex-end", flex:1, flexDirection:"row", display:"flex",}}>
                             <Avatar className={classes.iconSmall} alt="Claps" src={"https://static.thenounproject.com/png/1085294-200.png"}/>
                             <Typography style={{margin:"5px"}} className={classes.indicator}>88K</Typography>
                             <ModeCommentIcon className={classes.iconSmall}/>
@@ -118,7 +118,7 @@ export default function Comment(){
                 </Paper>
             </div>
             <div style={{background:"rgba(0,0,0,0.05)", padding:"10px 300px 0 300px",flex:1, flexDirection:"column", display:"flex"}}>
-                <Typography className={classes.header}>
+                <Typography className={classes.head}>
                     Responses
                 </Typography>
                 <div style={{flex:1, flexDirection:"column", display:"flex"}}>
@@ -137,7 +137,7 @@ export default function Comment(){
                                 <Button className={classes.Button} style={{color:"rgba(0,0,0,0.54)"}} variant="outlined">Full Screen</Button>
                             </div>
                     </Paper>
-                    {comment.map(items =>
+                    {komentar.map(items =>
                         <Paper style={{padding:"10px", marginBottom:"20px"}}>
                             <div style={{flex:1, flexDirection:"row", display:"flex",}}>
                                 <Avatar style={{marginRight:"10px"}} className={classes.clap} alt={items.name} src={items.avatar} />

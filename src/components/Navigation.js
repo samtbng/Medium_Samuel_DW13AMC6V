@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ScrollMenu from 'react-horizontal-scrolling-menu';
-import {Link} from 'react-router-dom';
+import Button from '@material-ui/core/Button';
 import '../App.css';
  
 // list of items
@@ -30,7 +30,7 @@ const MenuItem = ({text, selected}) => {
 // Important! add unique key
 export const Menu = (list, selected) =>
   list.map(items => {
-    return <Link to={items.url}><MenuItem text={items.name} key={items.name} selected={selected} /></Link>;
+    return <Button href={items.url}><MenuItem text={items.name} key={items.name} selected={selected} /></Button>;
   });
  
 const Arrow = ({ text, className }) => {

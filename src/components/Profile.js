@@ -16,7 +16,6 @@ export default class Login extends Component{
                 container
                 direction="column"
                 justify="flex-start"
-                alignItems="left"
                 >
                     <Grid container>
                         <Grid item xs style={{paddingLeft:"10px"}}>

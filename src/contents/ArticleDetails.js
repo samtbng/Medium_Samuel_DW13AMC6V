@@ -11,6 +11,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import BookmarkIcon from '@material-ui/icons/BookmarkBorder';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Follow from '../components/Follow';
+import RelatedArticle from '../components/RelatedArticle';
 import Footer from '../components/Footer';
 
 
@@ -56,11 +57,11 @@ const useStyles = makeStyles(theme => ({
 export default function CategoryPage() {
         const classes = useStyles();
     return( 
-        <Container className={classes.root}>
+        <div className={classes.root}>
             <Header/>
             <div style={{marginBottom:"10px"}}>
                 <hr/>
-                <AppBar position="static" elevation="0" style={{background:"white", alignItems:"left"}}>
+                <AppBar position="static" elevation="0" style={{background:"#ffffff", alignItems:"center"}}>
                     <div style={{flex:1, flexDirection:"row", display:"flex"}}> 
                         <div style={{paddingRight:"10px"}}>
                             <img src={"https://miro.medium.com/max/216/1*IPEsgX_bZKP_7OubdnI7-Q.png"}alt="logo"/>
@@ -73,22 +74,24 @@ export default function CategoryPage() {
                     </div>    
                 </AppBar>
             </div>
-            <div style={{alignItems :"center", flex:1, flexDirection:"column", display:"flex",marginBottom:"20px"}}>
-                <Card elevation="0">
-                    <CardActionArea>
-                        <CardMedia
-                        component="img"
-                        alt="Joy Of Being an Uthethered Woman"
-                        image={"https://miro.medium.com/max/4195/1*cWrckQhDDGxKiwpb6YtPtg.jpeg"}
-                        title="The Greatest Sales Deck I’ve Ever Seen"
-                        />
-                    </CardActionArea>
-                </Card>
-                <div>
-                    <Typography variant="caption">Photo by Olu Eletu</Typography>
+            <Container>
+                <div style={{alignItems :"center", flex:1, flexDirection:"column", display:"flex",marginBottom:"20px"}}>
+                    <Card elevation="0">
+                        <CardActionArea>
+                            <CardMedia
+                            component="img"
+                            alt="The Greatest Sales Deck I’ve Ever Seen"
+                            image={"https://miro.medium.com/max/4195/1*cWrckQhDDGxKiwpb6YtPtg.jpeg"}
+                            title="The Greatest Sales Deck I’ve Ever Seen"
+                            />
+                        </CardActionArea>
+                    </Card>
+                    <div>
+                        <Typography variant="caption">Photo by Olu Eletu</Typography>
+                    </div>
                 </div>
-            </div>
-            <div style={{textAlign:"justify", flex:1, flexDirection:"column", display:"flex", padding:"0 250px 0 250px"}}>
+            </Container>
+            <div style={{textAlign:"justify", flex:1, flexDirection:"column", display:"flex", padding:"0 250px 0 250px", marginBottom:"20px"}}>
                 <div style={{marginBottom:"20px"}}>
                     <Typography className={classes.header}>
                         The Greatest Sales Deck I’ve Ever Seen
@@ -109,7 +112,7 @@ export default function CategoryPage() {
                         <div>
                             <Typography className={classes.profileName} color="textSecondary">
                                 Sep 15, 2016 - 8 min read
-                            </Typography>                     
+                            </Typography>           
                         </div>
                     </div>
                     <div>
@@ -166,9 +169,10 @@ export default function CategoryPage() {
                         “This,” I said, “is the greatest sales deck I have ever seen.”
                     </Typography>
                 </div>
-                    <Follow/>
+                <Follow/>
             </div>
+            <RelatedArticle/>
             <Footer/>
-        </Container>
+        </div>   
     );
 }
