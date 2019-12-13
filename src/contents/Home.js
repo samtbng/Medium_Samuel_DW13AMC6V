@@ -81,7 +81,7 @@ export default function Home() {
       <Grid maxwidth="md" container justify="center" spacing={1} style={{marginBottom:"5px"}}>
         <Grid item xs>
           <Card elevation="0" className={classes.card}>
-            <Link to="/ArticleDetails">
+            <Link to="/article_details">
               <CardActionArea>
                 <CardMedia
                   component="img"

@@ -87,7 +87,7 @@ export default function CategoryPage() {
                             <Grid container spacing={0} >
                                 <Grid item xs={7}>
                                     <Card className={classes.card}>
-                                        <Link to="/ArticleDetails">
+                                        <Link to="/article_details">
                                             <CardActionArea>
                                                 <CardMedia
                                                 component="img"

@@ -6,7 +6,7 @@ import '../App.css';
 // list of items
 const list = [
   { name: 'Home', url:"/"},
-  { name: 'One Zero', url:"/CategoryPage"},
+  { name: 'One Zero', url:"/category_page"},
   { name: 'Elemental', url:"/"},
   { name: 'Zora', url:"/"},
   { name: 'Force', url:"/"},

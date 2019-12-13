@@ -137,7 +137,7 @@ return(
                 </div>
                 <Divider style={{margin:"20px 0 20px 0"}} />
                     <div style={{flex:1, flexDirection:"column", display:"flex",}}>
-                            <Button href="/Comment" style={{height:"40px",color:"green",border:"1px green solid", fontSize:"10px", fontWeight:"200"}}>
+                            <Button href="/comment" style={{height:"40px",color:"green",border:"1px green solid", fontSize:"10px", fontWeight:"200"}}>
                                 See Responses (234)
                             </Button>
                     </div>

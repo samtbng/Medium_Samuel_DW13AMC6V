@@ -4,7 +4,8 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import MenuItem from '@material-ui/core/MenuItem';
 import Divider from '@material-ui/core/Divider';
-import Avatar from '@material-ui/core/Avatar'
+import Avatar from '@material-ui/core/Avatar';
+import {Link} from 'react-router-dom';
 
 export default class Login extends Component{
 
@@ -37,7 +38,7 @@ export default class Login extends Component{
                     </Grid>
                     <Divider/>
                     <Grid>
-                        <MenuItem>New Story</MenuItem>
+                        <Link to="/new_story" ><MenuItem>New Story</MenuItem></Link>
                         <MenuItem>Stories</MenuItem>
                         <MenuItem>Stats</MenuItem>
                     </Grid>

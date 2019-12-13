@@ -7,14 +7,16 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import CategoryPage from './contents/CategoryPage';
 import ArticleDetails from './contents/ArticleDetails';
 import Comment from './contents/Comment';
+import NewStory from './contents/NewStory';
 
 ReactDOM.render(
     <Router>
         <div>
             <Route exact path="/" component={App}/>
-            <Route exact path="/CategoryPage" component={CategoryPage}/>
-            <Route exact path="/ArticleDetails" component={ArticleDetails}/>
-            <Route exact path="/Comment" component={Comment}/>
+            <Route exact path="/category_page" component={CategoryPage}/>
+            <Route exact path="/article_details" component={ArticleDetails}/>
+            <Route exact path="/comment" component={Comment}/>
+            <Route exact path="/new_story" component={NewStory}/>
         </div>
     </Router>, document.getElementById('root'));
 
