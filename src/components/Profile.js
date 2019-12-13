@@ -39,7 +39,7 @@ export default class Login extends Component{
                     <Divider/>
                     <Grid>
                         <Link to="/new_story" ><MenuItem>New Story</MenuItem></Link>
-                        <MenuItem>Stories</MenuItem>
+                        <Link to="/stories" ><MenuItem>Stories</MenuItem></Link>
                         <MenuItem>Stats</MenuItem>
                     </Grid>
                     <Divider/>

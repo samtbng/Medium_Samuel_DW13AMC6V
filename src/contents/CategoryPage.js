@@ -64,11 +64,12 @@ export default function CategoryPage() {
                 minWidth="md"
                 spacing={6}
                 >
-                    <Grid container style={{margin:"30px 0 30px 0"}}>
+                    <Container>
+                        <Grid container style={{margin:"30px 0 30px 0"}}>
                         <Grid item xs={2}>
                             <img src="./oneZero.png" alt="One Zero Logo" width="220px"/>
                         </Grid>
-                        <Grid item xs={5} style={{marginLeft:"30px"}}>
+                        <Grid item xs={4} style={{marginLeft:"30px"}}>
                             <Paper elevation="0">
                                 <Typography className={classes.header}>
                                     <Link href="#" color="#6A0BFF">The front lines of the future.</Link> A Medium publication about
@@ -81,7 +82,9 @@ export default function CategoryPage() {
                                 Follow
                             </Button>
                         </Grid>
-                    </Grid>
+                        </Grid>
+                        </Container>
+                    
                     <Grid container>
                         <Container style={{marginBottom:"20px"}}>
                             <Grid container spacing={0} >

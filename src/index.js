@@ -8,6 +8,7 @@ import CategoryPage from './contents/CategoryPage';
 import ArticleDetails from './contents/ArticleDetails';
 import Comment from './contents/Comment';
 import NewStory from './contents/NewStory';
+import Story from './contents/Story';
 
 ReactDOM.render(
     <Router>
@@ -17,6 +18,7 @@ ReactDOM.render(
             <Route exact path="/article_details" component={ArticleDetails}/>
             <Route exact path="/comment" component={Comment}/>
             <Route exact path="/new_story" component={NewStory}/>
+            <Route exact path="/stories" component={Story}/>
         </div>
     </Router>, document.getElementById('root'));
 
