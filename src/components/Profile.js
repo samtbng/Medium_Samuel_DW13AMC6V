@@ -23,7 +23,7 @@ export default class Login extends Component{
                                 <Avatar alt="Claps" src={"https://miro.medium.com/fit/c/256/256/1*5HuPOJPsdTfmCoYOYwtCpw.jpeg"}/>
                             </IconButton>
                         </Grid>
-                        <Grid style={{paddingRight:"10px"}}>
+                        <Grid style={{padding:"10px 10px 0px 0px"}}>
                             <Typography>
                                 Samuel Tobing
                             </Typography>
