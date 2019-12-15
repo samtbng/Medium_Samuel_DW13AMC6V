@@ -11,6 +11,8 @@ import NewStory from "./Layout/NewStoryLayout";
 import Story from "./Layout/StoryLayout";
 import Stats from "./contents/Stats";
 import Bookmarks from "./Layout/BookmarkLayout";
+import ProfileLayout from "./Layout/ProfileLayout";
+
 ReactDOM.render(
   <Router>
     <div>
@@ -22,6 +24,7 @@ ReactDOM.render(
       <Route exact path="/stories" component={Story} />
       <Route exact path="/stats" component={Stats} />
       <Route exact path="/bookmarks" component={Bookmarks} />
+      <Route exact path="/profile" component={ProfileLayout} />
     </div>
   </Router>,
   document.getElementById("root")

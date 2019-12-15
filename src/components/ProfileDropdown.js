@@ -16,7 +16,7 @@ export default class Login extends Component {
             <Grid item xs style={{ paddingLeft: "10px" }}>
               <IconButton>
                 <Avatar
-                  alt="Claps"
+                  alt="avatar"
                   src={
                     "https://miro.medium.com/fit/c/256/256/1*5HuPOJPsdTfmCoYOYwtCpw.jpeg"
                   }
@@ -48,7 +48,9 @@ export default class Login extends Component {
             <Link to="/bookmarks">
               <MenuItem>Bookmarks</MenuItem>
             </Link>
-            <MenuItem>Profile</MenuItem>
+            <Link to="/profile">
+              <MenuItem>Profile</MenuItem>
+            </Link>
             <MenuItem>Settings</MenuItem>
             <MenuItem>Help</MenuItem>
             <MenuItem>Sign Out</MenuItem>

@@ -9,7 +9,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import Menu from "@material-ui/core/Menu";
 import InputBase from "@material-ui/core/InputBase";
 import Register from "../components/Register";
-import Profile from "../components/Profile";
+import ProfileDropdown from "../components/ProfileDropdown";
 import { Link } from "react-router-dom";
 import Avatar from "@material-ui/core/Avatar";
 
@@ -140,7 +140,7 @@ export default function Home() {
               open={open}
               onClose={handleClose}
             >
-              <Profile />
+              <ProfileDropdown />
             </Menu>
           </div>
         </Toolbar>

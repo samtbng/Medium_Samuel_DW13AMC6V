@@ -89,7 +89,6 @@ export default class Stats extends Component {
               }}
             >
               <Button
-                autoCapitalize="false"
                 style={{ textTransform: "none", fontSize: "19px" }}
               >
                 Learn more about using stats
