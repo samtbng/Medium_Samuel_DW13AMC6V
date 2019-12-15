@@ -80,7 +80,7 @@ export default function Home() {
 
   return (
     <div className={classes.root}>
-      <AppBar elevation="0" color="inherit" position="static">
+      <AppBar elevation={0} color="inherit" position="static">
         <Toolbar>
           <Typography variant="h4" className={classes.title}>
             <Link to="/" style={{ textDecoration: "none" }}>

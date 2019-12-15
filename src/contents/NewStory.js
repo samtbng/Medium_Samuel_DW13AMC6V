@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Container, IconButton } from "@material-ui/core";
-import Header from "../components/Header";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import TextField from "@material-ui/core/TextField";
 
@@ -9,7 +8,6 @@ export default class NewStory extends Component {
     return (
       <div stlye={{ flexGrow: 1 }}>
         <Container>
-          <Header />
           <div style={{ padding: "80px 120px 80px 120px" }}>
             <div style={{ flex: 1, flexDirection: "row", display: "flex" }}>
               <div style={{ paddingTop: "56px" }}>

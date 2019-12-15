@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import {Grid, Paper, Typography} from '@material-ui/core/';
+import { Grid, Paper, Typography } from '@material-ui/core/';
 
 export default class ListArticle extends Component {
-	render() {
-		return (
-			<div>
+    render() {
+        return (
+            <div>
                 <Grid item xs >
-                    <Grid Container justify="center">
-                        <Paper elevation="0" style={{height:"120px",}} >
+                    <Grid container justify="center">
+                        <Paper elevation="0" style={{ height: "120px", }} >
                             <Grid container spacing={3}>
                                 <Grid item>
                                     <Typography color="textSecondary" variant="h4">{this.props.rank}</Typography>
@@ -16,7 +16,7 @@ export default class ListArticle extends Component {
                                     <Grid item xs container direction="column" spacing={2}>
                                         <Typography component="h6">
                                             <b>
-                                            {this.props.title}
+                                                {this.props.title}
                                             </b>
                                         </Typography>
                                         <Typography variant="subtitle2">
@@ -31,8 +31,8 @@ export default class ListArticle extends Component {
                         </Paper>
                     </Grid>
                 </Grid>
-			</div>
-		)
-	}
+            </div>
+        )
+    }
 }
 

@@ -1,12 +1,12 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Header from "../components/Header";
 import {
   Container,
   Button,
   AppBar,
   Typography,
-  IconButton
+  IconButton,
+  Divider
 } from "@material-ui/core";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -17,8 +17,6 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import BookmarkIcon from "@material-ui/icons/BookmarkBorder";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import Follow from "../components/Follow";
-import RelatedArticle from "../components/RelatedArticle";
-import Footer from "../components/Footer";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -62,9 +60,9 @@ export default function CategoryPage() {
   return (
     <div className={classes.root}>
       <Container>
-        <Header />
-        <div style={{ marginBottom: "10px" }}>
-          <hr />
+        <Divider style={{ margin: "0 0 10px 0" }} />
+        <div style={{ paddingBottom: "10px" }}>
+
           <AppBar
             position="static"
             elevation="0"
@@ -237,8 +235,6 @@ export default function CategoryPage() {
         </div>
         <Follow />
       </div>
-      <RelatedArticle />
-      <Footer />
     </div>
   );
 }

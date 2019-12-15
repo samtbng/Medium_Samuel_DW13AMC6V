@@ -1,6 +1,5 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
-import Header from '../components/Header';
 import {Container, Typography, Paper, Avatar, Button} from '@material-ui/core';
 import ModeCommentIcon from '@material-ui/icons/ModeComment';
 import BookmarkIcon from '@material-ui/icons/BookmarkBorder';
@@ -91,7 +90,6 @@ export default function Comment(){
     const classes = useStyles();
     return(
         <Container>
-            <Header/>
             <div style={{background:"white", padding:"80px 300px 80px 300px",flex:1, flexDirection:"column", display:"flex"}}>
                 <Typography className={classes.head}>
                         Showing Responses for:

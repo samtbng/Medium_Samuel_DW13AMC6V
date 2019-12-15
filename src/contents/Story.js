@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Container, Typography, Button } from "@material-ui/core";
-import Header from "../components/Header";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 
@@ -60,7 +59,6 @@ export default class NewStory extends Component {
     return (
       <div stlye={{ flexGrow: 1 }}>
         <Container>
-          <Header />
           <div
             style={{
               flex: 1,

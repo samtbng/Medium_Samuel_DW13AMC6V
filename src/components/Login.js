@@ -9,10 +9,6 @@ import Link from "@material-ui/core/Link";
 
 export default class Login extends Component {
   render() {
-    const sendData = () => {
-      this.props.closeDialogLogin(false);
-      this.props.openDialogRegister(true);
-    };
     return (
       <div style={{ rootGrow: 1, padding: "50px" }}>
         <Grid container justify="center" spacing={0}>
@@ -55,7 +51,7 @@ export default class Login extends Component {
               </DialogContent>
               <DialogContentText>
                 <text>
-                  <Link onClick={sendData} href="#">
+                  <Link onClick={this.props.callBack} href="#">
                     {"<"} All Sign in Options
                   </Link>
                 </text>
