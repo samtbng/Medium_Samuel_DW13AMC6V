@@ -7,7 +7,7 @@ import Divider from "@material-ui/core/Divider";
 import Avatar from "@material-ui/core/Avatar";
 import { Link } from "react-router-dom";
 
-export default class Login extends Component {
+export default class ProfileDropdown extends Component {
   render() {
     return (
       <div style={{ width: "200px" }}>

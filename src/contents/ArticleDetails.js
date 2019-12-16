@@ -6,7 +6,7 @@ import {
   AppBar,
   Typography,
   IconButton,
-  Divider
+  Divider,
 } from "@material-ui/core";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -17,6 +17,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import BookmarkIcon from "@material-ui/icons/BookmarkBorder";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import Follow from "../components/Follow";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -152,13 +153,17 @@ export default function CategoryPage() {
           }}
         >
           <div style={{ marginRight: "10px" }}>
-            <Avatar
-              className={classes.avatar}
-              alt="Avatar"
-              src={
-                "https://miro.medium.com/fit/c/128/128/1*w1dyAyH5Pc_XysvAyd3C_Q.jpeg"
-              }
-            />
+            <Link to="/article_by_person">
+              <IconButton>
+                <Avatar
+                  className={classes.avatar}
+                  alt="Avatar"
+                  src={
+                    "https://miro.medium.com/fit/c/128/128/1*w1dyAyH5Pc_XysvAyd3C_Q.jpeg"
+                  }
+                />
+              </IconButton>
+            </Link>
           </div>
           <div style={{ flex: 1, flexDirection: "column", display: "flex" }}>
             <div>
