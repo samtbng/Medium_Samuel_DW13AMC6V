@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Typography, Button, Avatar } from '@material-ui/core';
 
-export default class ProfilePage extends Component {
+class ProfilePage extends Component {
     render() {
         return (
             <div style={{ padding: "50px 300px 50px 300px" }}>
@@ -34,3 +34,5 @@ export default class ProfilePage extends Component {
         )
     }
 }
+
+export default ProfilePage

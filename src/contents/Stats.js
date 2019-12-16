@@ -125,8 +125,16 @@ export default class Stats extends Component {
           <TabPanel value={this.state.value} index={2}>
             <Typography>Graph3</Typography>
           </TabPanel>
+          <div style={{ borderBottom: "1px grey solid" }}>
+            <Button>Stories</Button>
+            <Button>Responses</Button>
+            <Button>Series</Button>
+          </div>
+          <Typography variant="h6" style={{ paddingTop: "10px", color: "grey", textAlign: "center", fontWeight: "bold" }}>
+            There are no published stories for which you can view stats.
+          </Typography>
         </div>
-      </Container>
+      </Container >
     );
   }
 }
